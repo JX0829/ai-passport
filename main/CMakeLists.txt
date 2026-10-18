@@ -1,0 +1,23 @@
+idf_component_register(
+    SRCS "main.c"
+         "ui_pixel.c"
+         "ui_pixel_math.c"
+         "font_chinese_14.c"
+         "demo_voice.c"
+         "demo_coin.c"
+         "demo_ttt.c"
+         "demo_rps.c"
+         "demo_relax.c"
+         "status_bar.c"
+         "time_manager.c"
+         "demo_display.c"
+         "demo_button.c"
+         "demo_audio.c"
+         "demo_battery.c"
+         "demo_radio.c"
+         "demo_wifi.c"
+         "demo_ble.c"
+         "demo_low_power.c"
+    INCLUDE_DIRS "." "include"
+    REQUIRES bsp bt esp_event esp_hw_support esp_netif esp_timer esp_wifi nvs_flash esp_http_client json helix-mp3
+)
